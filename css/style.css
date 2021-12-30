@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #0d192b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #14253d;
+  width: 29%;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 32rem;
+  max-width: 35rem;
+}
+.card-img {
+  width: 100%;
+  border-radius: 1.5rem;
+  background: #00fff7;
+}
+.card-h {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+.card-h:hover {
+  color: #00fff7;
+}
+.card-data {
+  color: #8bacda;
+}
+.card-item {
+  margin-top: 2rem;
+}
+.card-numData {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #2f415b;
+  padding-bottom: 2rem;
+}
+.card-creator {
+  display: flex;
+  align-items: center;
+}
+.card-creator-person {
+  height: 3.3rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.card-creator p {
+  margin-left: 2rem;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  width: 11rem;
+}
+
+.data1 {
+  margin-left: 0.9rem;
+}
+
+.eth {
+  color: #00FFF8;
+}
+
+.creator-name:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+  color: red;
+  object-fit: contain;
+  cursor: pointer;
+}
+.image-container::after {
+  content: url("../images/icon-view.svg");
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 1.2%;
+  background-color: #00fff7;
+  opacity: 0;
+  border-radius: 1.5rem;
+  transition: opacity 0.2s linear;
+}
+
+.image-container:hover:after {
+  opacity: 1;
+}
+
+.image-container:hover:before {
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=style.css.map */
